@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <script type="module" src="/js/esp32webtool/install-button.js"> </script>
   <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <title>HHL OpenController - Firmware Installer</title>
 </head>
-
 <body>
   <div class="context">
-
     <ul class="circles">
       <li></li>
       <li></li>
@@ -26,10 +24,12 @@
     <div class="box">
       <h2>Firmware Installer</h2>
       <p>Version 4.26.2023</p>
-      <p>Resolves some issues with SNES protocol.</p>
-      <p>Controller must be powered ON in retro mode, then plugged in.</p>
-      <p>Implements N64 console support. Controller must be in retro mode and OFF. Plug in to N64, and power N64 console on.</p>
-      <p>Better mappings implemented for N64/GameCube.</p>
+      <ul>
+        <li>Resolves some issues with SNES protocol.</li>
+        <li>Controller must be powered ON in retro mode, then plugged in.</li>
+        <li>Implements N64 console support. Controller must be in retro mode and OFF. Plug in to N64, and power N64 console on.</li>
+        <li>Better mappings implemented for N64/GameCube.</li>
+      </ul>
       <esp-web-install-button manifest="/firmware/opencontroller_classic/manifest.json"></esp-web-install-button>
       <br>
       <div class="line"></div>
@@ -43,7 +43,6 @@
       <div class="line"></div>
       <p>If no USB cable is connected, the controller will boot into wireless mode (Except in wired mode).</p>
     </div>
-
     <div class="box">
       <h2>HOJA EFM8UB1 Update Required</h2>
       <p>This update can only be run from Windows currently.</p>
@@ -56,5 +55,4 @@
     </div>
   </div>
 </body>
-
 </html>
