@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
 <head>
-  <script type="module" src="/js/esp32webtool/install-button.js"> </script>
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <script type="module" src="./js/esp32webtool/install-button.js"> </script>
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
 
 <body>
@@ -26,33 +26,64 @@
     <div class="box">
       <h2>Firmware Installer</h2>
       <p>Version 6.7.2023</p>
-      <p>Resolves NES issues and more</p>
-      <p>Controller must be powered ON in retro mode, then plugged in to ensure communication.</p>
+      <ul class="list-features">
+      <li>Resolves NES issues and more</li>
+      <li class="sub-index">Controller must be powered ON in retro mode, then plugged in to ensure communication.</li>
+      </ul>
+      <div class="line"></div>
       <esp-web-install-button manifest="/firmware/super_gamepad_plus/manifest.json"></esp-web-install-button>
       <br>
       <div class="line"></div>
       <h2>Basic Operation Instructions</h2>
-      <p>Hold select to turn the controller on or off.</p>
-      <p>Hold the following buttons on power up to boot into the following modes:</p>
-      <p>A -> Nintendo Switch Mode</p>
-      <p>X -> XInput Mode</p>
-      <p>B -> DInput Mode</p>
-      <p>Dpad Left -> NES/SNES Mode</p>
-      <p>Dpad Down -> N64 Mode</p>
-      <p>Dpad Right -> GameCube Mode</p>
+      <ul class="list-features">
+      <li>Hold select to turn the controller on or off.</li>
+      <li>Hold the following action buttons on power up (Not dpad) to boot into the following modes:</li>
+      </ul>
+      <table class="table-modes">
+        <tr>
+          <th>Button</th>
+          <th>Mode</th>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>Nintendo Switch</td>
+        </tr>
+        <tr>
+          <td>X</td>
+          <td>XInput/td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>DInput</td>
+        </tr>
+        <tr>
+          <td>Dpad Left</td>
+          <td>NES/SNES</td>
+        </tr>
+        <tr>
+          <td>Dpad Down</td>
+          <td>N64</td>
+        </tr>
+        <tr>
+          <td>Dpad Right</td>
+          <td>Gamecube</td>
+        </tr>
+      </table>
       <div class="line"></div>
       <p>If no USB cable is connected, the controller will boot into wireless mode.</p>
 
     <div class="line"></div>
       <h2>HOJA EFM8UB1 Update Required</h2>
       <p>This update can only be run from Windows currently.</p>
-      <p>After flashing the ESP32 firmware, hold L and R while plugging in.</p>
-      <p>This will enable USB bootloader on the EFM8UB1. Download the zip file linked</p>
-      <p>unzip it, and run the included .bat file to update the firmware.</p>
-      <p>Unplug and replug to finalize the firmware install.</p>
+      <ol class="instructions">
+      <li>After flashing the ESP32 firmware, hold L and R while plugging in.</li>
+      <li>This will enable USB bootloader on the EFM8UB1. Download the zip file linked</li>
+      <li>Unzip it, and run the included .bat file to update the firmware.</li>
+      <li>Unplug and replug to finalize the firmware install.</li>
+      </ol>
       <a href="/firmware/hoja_efm8usb/open_controller_usb_3.23.2023.zip" target="_blank">EFM8UB1 3.23.2023 Download
         Zip</a>
-
+    </div>
   </div>
 
 </body>
