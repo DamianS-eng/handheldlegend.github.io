@@ -83,8 +83,11 @@ body {
 
 #list-home li {
     list-style: none;
-    line-height: 1.5;
     margin-block: 1.2rem;
+}
+
+#list-home li, .instructions li {
+    line-height: 1.5;
 }
 
 #list-home li a:hover,
@@ -92,10 +95,13 @@ body {
     text-decoration: underline;
 }
 
-.list-features {
-    list-style: circle;
+.list-features, .instructions {
     text-align: start;
     margin-left: 2rem;
+}
+
+.list-features {
+    list-style: circle;
 }
 
 .list-features .sub-index {
