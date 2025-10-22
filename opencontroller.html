@@ -26,8 +26,9 @@
       <p>Version 4.26.2023</p>
       <ul class="list-features">
         <li>Resolves some issues with SNES protocol.</li>
-        <li>Controller must be powered ON in retro mode, then plugged in.</li>
-        <li>Implements N64 console support. Controller must be in retro mode and OFF. Plug in to N64, and power N64 console on.</li>
+        <li class="sub-index">Controller must be powered ON in retro mode, then plugged in.</li>
+        <li>Implements N64 console support. </li>
+          <li class="sub-index">Controller must be in retro mode and OFF. Plug in to N64, and power N64 console on.</li>
         <li>Better mappings implemented for N64/GameCube.</li>
       </ul>
       <div class="line"></div>
@@ -35,14 +36,32 @@
       <br>
       <div class="line"></div>
       <h2>Basic Operation Instructions</h2>
-      <p>Hold select to turn the controller on or off.</p>
-      <p>Hold the following action buttons on power up (Not dpad) to boot into the following modes:</p>
       <ul class="list-features">
-      <li>Left  -> Wired Mode (SNES/GC/N64)</li>
-      <li>Right -> Nintendo Switch Mode</li>
-      <li>Up    -> XInput Mode</li>
-      <li>Down  -> DInput Mode</li>
+      <li>Hold select to turn the controller on or off.</li>
+      <li>Hold the following action buttons on power up (Not dpad) to boot into the following modes:</li>
       </ul>
+      <table class="table-modes">
+        <tr>
+          <th>D-Pad</th>
+          <th>Mode</th>
+        </tr>
+        <tr>
+          <td>Left</td>
+          <td>Wired (SNES/GC/N64)</td>
+        </tr>
+        <tr>
+          <td>Right</td>
+          <td>Nintendo Switch</td>
+        </tr>
+        <tr>
+          <td>Up</td>
+          <td>XInput</td>
+        </tr>
+        <tr>
+          <td>Down</td>
+          <td>DInput</td>
+        </tr>
+      </table>
       <div class="line"></div>
       <p>If no USB cable is connected, the controller will boot into wireless mode (Except in wired mode).</p>
     </div>
