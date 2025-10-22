@@ -81,6 +81,17 @@ body {
     z-index: 0;
 }
 
+#list-home li {
+    list-style: none;
+    line-height: 1.5;
+    margin-block: 1.2rem;
+}
+
+#list-home li a:hover,
+#list-home li a:focus-within {
+    text-decoration: underline;
+}
+
 .box {
     width: 40rem;
     color: rgb(0, 0, 0);
@@ -150,6 +161,8 @@ body {
     z-index: 0;
     
 }
+
+
 
 #toast {
     display: none;
