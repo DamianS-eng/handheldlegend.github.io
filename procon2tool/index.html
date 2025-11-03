@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
   <meta charset="UTF-8">
@@ -1145,6 +1145,11 @@
 
     // Initial button state
     updateButtonStates();
+
+    // Add PWA script
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    } 
   </script>
 </body>
 
